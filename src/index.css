@@ -1,0 +1,46 @@
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "Playfair Display", "Georgia", "Times New Roman", serif;
+  --font-sans: "Inter", "Helvetica Neue", system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, monospace;
+  
+  --color-primary: #121212;
+  --color-primary-hover: #2a2a2a;
+  --color-editorial-bg: #F9F7F2;
+  --color-editorial-dark: #121212;
+  --color-editorial-accent: #E5E1D8;
+  --color-editorial-subtle: #F3EFE7;
+  --color-editorial-border: #121212;
+}
+
+body {
+  background-color: var(--color-editorial-bg);
+  color: var(--color-editorial-dark);
+  font-family: var(--font-sans);
+}
+
+.editorial-title {
+  font-family: var(--font-serif);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+.editorial-header-wide {
+  font-family: var(--font-sans);
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  font-size: 10px;
+  font-weight: 700;
+}
+
+.editorial-border {
+  border-color: var(--color-editorial-dark);
+}
+
+.editorial-card {
+  background-color: #ffffff;
+  border: 1px solid var(--color-editorial-dark);
+  border-radius: 0px; /* Sharp corners represent the premium print style */
+}
+
